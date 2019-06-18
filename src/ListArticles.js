@@ -1,12 +1,11 @@
 import React, { useContext } from 'react';
-import { map } from 'ramda';
-import { StoreContext } from '../Store';
+import { StoreContext } from './Store';
 import styled from 'styled-components';
-import { Article } from './Article';
+import { Article } from './Component/Article';
 
 export const ListArticles = () => {
 	const [state] = useContext(StoreContext)
-	if (!state.listArticles.length >= 1)
+	if (!state.listArticles)
 	{
 		return <p>Is Empty</p>;
 	}

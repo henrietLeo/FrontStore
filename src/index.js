@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import styled from 'styled-components';
 import { Store } from './Store';
-import { AddArticle } from './Component/AddArticle';
-import { ListArticles } from './Component/ListArticles';
+import { AddArticle } from './AddArticle';
+import { ListArticles } from './ListArticles';
 //import * as serviceWorker from './serviceWorker';
 
 const App =() =>

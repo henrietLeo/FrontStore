@@ -36,6 +36,7 @@ const reducer = (state = initialState, action) => {
 				return state;
 			console.warn('this is it');
 			return {...state,
+				currentArticle: {title: '', content: ''},
 				listArticles: [...state.listArticles, {title: state.currentArticle.title, content : state.currentArticle.content}]
 			};
 		default:
