@@ -13,8 +13,13 @@ export const ListArticles = () => {
 		return <Article key={article.title} title={article.title} content={article.content}/>;
 	});
 
-	return <div>
+	return <Articles>
 		{articles}
-		</div>;
+		</Articles>;
 }
-const Articles = styled.div``;
+const Articles = styled.div`
+width:50%;
+background-color: #b2e0b2;
+border-radius: 0px 10px 0px 0px;
+padding: 10px;
+`;
